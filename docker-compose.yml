@@ -4,7 +4,7 @@ services:
         image: mariadb:10.4
         container_name: mysql
         volumes:
-            - mysql-db:/var/lib/mysql
+            - ./mysql-db:/var/lib/mysql
         environment:
             MYSQL_USER: epgstation
             MYSQL_PASSWORD: epgstation
